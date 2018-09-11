@@ -1,7 +1,7 @@
-﻿import { Component, OnInit } from '@angular/core';
+﻿import { Component, OnInit,Inject } from '@angular/core';
 import { Http, Headers } from '@angular/http';
-import { NgForm, FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { Router, ActivatedRoute } from '@angular/router';
+import { NgForm, FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { FetchEmployeeComponent } from '../fetchemployee/fetchemployee';
 import { EmployeeService } from '../../services/empservice';
 
@@ -31,7 +31,7 @@ export class createemployee implements OnInit {
         })
     }
 
-    ngOnInit() {
+    ngOnInit() {        
         if (this.id > 0) {
             this.title = "Edit";
             this._employeeService.getEmployeeById(this.id)

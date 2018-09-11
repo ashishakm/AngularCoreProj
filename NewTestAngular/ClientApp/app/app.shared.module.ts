@@ -37,7 +37,7 @@ import { createemployee } from './components/addemployee/Addemployee';
             { path: 'fetch-data', component: FetchDataComponent },
             { path: 'fetch-employee', component: FetchEmployeeComponent },
             { path: 'register-employee', component: createemployee },
-            { path: 'employee/edit/:id', component: createemployee },  
+            { path: 'employee/edit/:id', component: FetchEmployeeComponent },  
             { path: '**', redirectTo: 'home' }
         ])
     ],

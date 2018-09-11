@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/throw';
-import { Employee } from '../employee.model';
+//import { Employee } from '../employee.model';
 
 @Injectable()
 export class EmployeeService {
@@ -27,13 +27,13 @@ export class EmployeeService {
             .catch(this.errorHandler)
     }
 
-    saveEmployee(employee:Employee) {
+    saveEmployee(employee) {
         return this._http.post(this.myAppUrl + 'api/Employee/Create', employee)
             .map((response: Response) => response.json())
             .catch(this.errorHandler)
     }
 
-    updateEmployee(employee:Employee) {
+    updateEmployee(employee) {
         return this._http.put(this.myAppUrl + 'api/Employee/Edit', employee)
             .map((response: Response) => response.json())
             .catch(this.errorHandler);
