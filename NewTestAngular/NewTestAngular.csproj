@@ -25,11 +25,15 @@
     <None Remove="ClientApp\app\components\addemployee\Addemployee.ts" />
     <None Remove="ClientApp\app\components\app\employee.model.ts" />
     <None Remove="ClientApp\app\components\fetchemployee\fetchemployee.ts" />
+    <None Remove="ClientApp\app\components\Login\Login.component.ts" />
+    <None Remove="ClientApp\app\components\Registration\Registration.component.ts" />
     <None Remove="ClientApp\app\Services\empservice.ts" />
   </ItemGroup>
 
   <ItemGroup>
     <TypeScriptCompile Include="ClientApp\app\components\addemployee\Addemployee.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\Login\Login.component.ts" />
+    <TypeScriptCompile Include="ClientApp\app\components\Registration\Registration.component.ts" />
     <TypeScriptCompile Include="ClientApp\app\employee.model.ts" />
     <TypeScriptCompile Include="ClientApp\app\components\fetchemployee\fetchemployee.ts" />
     <TypeScriptCompile Include="ClientApp\app\Services\empservice.ts" />

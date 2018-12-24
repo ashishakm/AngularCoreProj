@@ -6,7 +6,8 @@ import { NgForm, FormBuilder, FormGroup, Validators, FormControl } from '@angula
 
 @Component({
     selector: 'fetchemployee',
-    templateUrl: './fetchemployee.component.html'
+    templateUrl: './fetchemployee.component.html',
+    providers: [EmployeeService]
 })
 
 export class FetchEmployeeComponent  {
@@ -15,7 +16,7 @@ export class FetchEmployeeComponent  {
     title: string = "Create";
     id: number;
     errorMessage: any;
-
+    debugger;
     constructor(public http: Http, private _router: Router, private _avRoute: ActivatedRoute, private _employeeService: EmployeeService) {
         this.getEmployees();
         if (this._avRoute.snapshot.params["id"]) {

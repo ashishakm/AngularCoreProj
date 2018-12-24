@@ -259,3 +259,5 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/NewTestAngular/ClientApp/app/components/Login
+/NewTestAngular/ClientApp/app/components/Registration

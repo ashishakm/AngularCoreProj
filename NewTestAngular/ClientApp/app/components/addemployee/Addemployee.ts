@@ -6,11 +6,12 @@ import { FetchEmployeeComponent } from '../fetchemployee/fetchemployee';
 import { EmployeeService } from '../../services/empservice';
 
 @Component({
-    selector: 'createemployee',
-    templateUrl: './Addemployee.component.html'
+    selector: 'Addemployee',
+    templateUrl: './Addemployee.component.html',
+    providers: [EmployeeService]
 })
 
-export class createemployee implements OnInit {
+export class Addemployee implements OnInit {
     employeeForm: FormGroup;
     title: string = "Create";
     id: number;
