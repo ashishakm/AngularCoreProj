@@ -16,13 +16,7 @@ namespace NewTestAngular
         {
             BuildWebHost(args).Run();
         }
-
-
-        //Start file
-//Testing
-
-//Comment: method call
-
+        //Testing
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
